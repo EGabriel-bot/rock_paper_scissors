@@ -4,7 +4,6 @@ function getComputerChoice(){
   const randomPlay = plays.sort(() => Math.random() - .5)
   const computerChoice = String(randomPlay[0]);
 
-  //console.log(computerChoice);
   return computerChoice;
 }
 
@@ -33,7 +32,6 @@ function playRound(playerSelection, computerSelection){
   }
 }
 
-//const playerSelection = 'rock';
 const computerSelection = getComputerChoice();
 for (let i = 0; i < 5; i++) {
 console.log(playRound(prompt('Rock, Paper or Scissors'), computerSelection));
